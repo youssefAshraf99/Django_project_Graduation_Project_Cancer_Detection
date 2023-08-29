@@ -1,0 +1,73 @@
+/************************************************************
+  Title: CSS Theme for Bioinformatics on Django site
+  Author: Sean Hinds
+  Date: 12/17/17
+************************************************************/
+
+textarea {
+  overflow: hidden;
+}
+
+td, th {
+  padding-left: 36px;
+}
+
+p {
+  /* Cause sequence text to wrap without newline characters */
+  word-wrap: break-word;
+}
+
+.jumbotron {
+    background: #70D0B0;
+    color: #666666;
+    padding-bottom: 80px
+}
+.jumbotron .btn-primary {
+    background: #845ac7;
+    border-color: #845ac7
+}
+.jumbotron .btn-primary:hover {
+    background: #7646c1
+}
+.jumbotron p {
+    color: #666666;
+    max-width: 75%;
+    margin: 1em auto 2em
+}
+.navbar+.jumbotron {
+    margin-top: -20px
+}
+.jumbotron .lang-logo {
+    display: block;
+    background: #b01302;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 2px solid white
+}
+.jumbotron .lang-logo img {
+    max-width: 100%
+}
+
+/* I use the .alert class for my page footers on this site */
+.alert {
+    margin-top: 4%;
+    margin-bottom: 0%;
+    height: 300px;
+}
+
+.my-icon {
+  height: 200px;
+  width: 200px;
+}
+
+.my-icon-small {
+  height: 40px;
+  width: 40px;
+}
+
+.outputBox {
+  background: #CCCC66;
+}

@@ -1,0 +1,120 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="project">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="vinayak sharma">
+
+  <title>{{title}}</title>
+
+
+  <!-- bootstrap file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- bootstrap file-->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="{% static 'css/maicons.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+  <link rel="stylesheet" href="{% static 'vendor/owl-carousel/css/owl.carousel.css' %}">
+
+  <link rel="stylesheet" href="{% static 'vendor/animate/animate.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/theme.css' %}">
+
+
+  <!-- main css -->
+  <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 text-sm">
+          <div class="site-info">
+            <a href="#"><span class="mai-call text-primary"></span> +02 01271521805</a>
+            <span class="divider">|</span>
+            <a href="{% url 'index' %}"><span class="mai-mail text-primary"></span> cancer_scan@SCANER.com</a>
+          </div>
+        </div>
+        <div class="col-sm-4 text-right text-sm">
+          <div class="social-mini-button">
+            <a href="#"><span class="mai-logo-facebook-f"></span></a>
+            <a href="#"><span class="mai-logo-twitter"></span></a>
+            <a href="#"><span class="mai-logo-dribbble"></span></a>
+            <a href="#"><span class="mai-logo-instagram"></span></a>
+          </div>
+        </div>
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+  </div> <!-- .topbar -->
+
+
+  <!-- message here -->
+
+  {% if messages %}
+  {% for message in messages %}
+
+  <script>
+    alert("{{ message }}");
+  </script>
+
+  {% endfor %}
+  {% endif %}
+
+  <!--_______________________________________________-->
+
+
+
+</head>
+
+<body class="container-fluid">
+
+
+
+    <!-- navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="display-4" href="{% url 'index' %}"><span class="text-primary">CANCER</span>-SCAN<sapan> </a>
+          </div>
+        <div class="collapse navbar-collapse" id="mainNavBar">
+
+            {% if user.is_authenticated %}
+            {% else %}
+            <li><a href="{% url "register" %}"><span class="glyphicon glyphicon-user"></span> &nbsp; Sign up</a></li>
+            <li><a href="{% url "login" %}"><span class="glyphicon glyphicon-log-in"></span> &nbsp; Log in</a></li>
+            {% endif %}
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <br/>
+  <br>
+  <br>
+  <div class="row">
+    {% block start %}
+    {% if user.is_authenticated %}
+    <center><h1>welcome back {{user.username}}!</h1></center>
+    {% else %}
+    <center><h1>log in, plz . . .</h1></center>
+    {% endif %}
+    {% endblock %}
+  </div>
+</body>
+
+</html>

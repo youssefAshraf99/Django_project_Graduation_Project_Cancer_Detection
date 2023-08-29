@@ -1,0 +1,16 @@
+{
+  "name": "Bioinformatics on Django",
+  "description": "A Django application which hosts numerous sequence manipulation and statistical utilities.",
+  "image": "heroku/python",
+  "repository": "",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python manage.py collectstatic --noinput",
+        "test": "python manage.py test"
+      }
+    }
+  }
+}

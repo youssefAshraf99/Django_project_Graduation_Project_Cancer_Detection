@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!--Jumbotron header for this page-->
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Parse Sequence for Motif</h1>
+  </div>
+</div>
+<div class="container text-center"><br><br>
+
+  <!--HomeForm-->
+  <form method="POST">
+    
+    <!--For security-->
+    {% csrf_token %}
+    
+    <div class="row">
+
+      <!--Input-->
+      <div class="col-md-3 text-right">
+        <p><label for="id_post">Motif Sequence:</label><br>
+        </p>
+      </div>
+      <div class="col-md-9 text-left">
+        <p><textarea rows=3 cols=80 name="post" required id="id_post">{{posted}}</textarea></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 text-right">
+        <p><label for="id_against">Search Sequence:</label><br>
+        </p>
+      </div>
+      <div class="col-md-9 text-left">
+        <p><textarea rows=3 cols=80 name="against" required id="id_against">{{against}}</textarea></p>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <!--Submit-->
+      <div class="col-md-9 text-right">
+        <button type="submit">Submit</button><br><br>
+      </div>
+
+    </div>
+
+  </form>
+
+  <div class="row">
+
+    <!--Output-->
+    <div class="col-md-3 text-right">
+      <p><label>Search Result:</label></p>
+    </div>
+    <div class="col-md-9 text-left">
+      <p>
+        {% for tuple in result %}
+          Start index: {{tuple.0}}. End index: {{tuple.1}}<br>
+        {% endfor %}
+      </p>
+    </div>
+    
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+body {
+  margin: 0 auto;
+  max-width: 3000px;
+  padding: 0 20px;
+}
+
+.container2 {
+  border: 2px solid #da3d3d;
+  background-color: #1069a9;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: rgb(169, 204, 237);
+  max-width: 800px;
+  max-height: 3000px;
+
+
+}
+
+.container2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.time-right {
+  float: left;
+  color: rgb(163, 31, 31);
+  border-color: #ccc;
+  background-color: rgb(169, 204, 237);
+}
+
+.time-left {
+  float:inline-end;
+  color: rgb(163, 31, 31);
+  border-color: #ccc;
+  background-color: rgb(169, 204, 237);
+  border: 2px solid #0a0a9f;
+
+}

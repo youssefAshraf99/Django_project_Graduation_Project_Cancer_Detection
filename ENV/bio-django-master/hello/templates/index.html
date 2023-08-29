@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="jumbotron text-center">
+  <div class="container">
+
+    <img class="my-icon" src="{% static 'hello/img/dna.png'%}">
+
+    <h1>Bioinformatics Toolbelt</h1><br>
+    <p>A collection of sequence manipulation and statistical utilities.
+    This Python application was built on the Django framework and deployed to a Heroku server.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <br><p>
+        This site provides a collection of easy-to-use sequence manipulation tools. These tools can be used to manipulate
+        strings representing DNA, RNA, and peptide sequences for biomedical research. My intent is to add additional tools
+        and improve existing ones over time.
+      </p><br>
+      <p>
+        The Apps menu above will direct you to the various utilities on this site.
+        The Sequences module provides access to a database of peptide, DNA, and RNA example sequences.
+        Feel free to reach out to me with any questions, comments, or suggestions.
+      </p>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+{% endblock %}

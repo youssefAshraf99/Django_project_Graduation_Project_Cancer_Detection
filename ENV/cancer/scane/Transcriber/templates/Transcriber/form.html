@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<!--Jumbotron header for this page-->
+<div class="jumbotron text-center">
+  <div class="container">
+      <img class="my-icon" src="{% static 'hello/img/dna.png'%}">
+    <h1>DNA Sequence Transcriber</h1>
+  </div>
+</div>
+
+<div class="container text-center"><br><br>
+
+  <!--UI form for this page-->
+  <form method="POST">
+    
+    <!--Security token-->
+    {% csrf_token %}
+
+    <div class="row">
+      <!--Input-->
+      <div class="col-md-3 text-right">
+        <p><label for="id_post">Input DNA:<br></label></p>
+      </div>
+      <div class="col-md-9 text-left">
+        <p><textarea rows=7 cols=80 name="post" required id="id_post"></textarea>{{post}}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Submit-->
+      <div class="col-md-9 text-right">
+        <button type="submit">Submit</button><br><br>
+      </div>
+    </div>
+
+  </form>
+
+  <div class="row">
+    <!--Output-->
+    <div class="col-md-3 text-right">
+      <p><label>Output mRNA</label></p>
+    </div>
+    <div class="col-md-9 text-left">
+      <p><textarea rows=7 cols=80 name="post" id="output">{{result}}</textarea></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--clickCopy() functionality-->
+    <div class="col-md-9 text-right">
+      <button onclick='clickCopy()'>Copy</button><br><br>
+    </div>
+  </div>
+  
+</div>
+
+{% endblock %}

@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./GFG---Django-Login-System-main",
+        "./GFG---Django-Login-System-main/authentication"
+    ]
+}

@@ -1,0 +1,309 @@
+{% load static %}
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <title>CANCER SCAN</title>
+
+  <link rel="stylesheet" href="{% static 'css/maicons.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+  <link rel="stylesheet" href="{% static 'vendor/owl-carousel/css/owl.carousel.css' %}">
+
+  <link rel="stylesheet" href="{% static 'vendor/animate/animate.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/theme.css' %}">
+  
+  </head>
+  <body>
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header>
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 text-sm">
+            <div class="site-info">
+              <a href="#"><span class="mai-call text-primary"></span> +02 01271521805</a>
+              <span class="divider">|</span>
+              <a href="{% url 'index' %}"><span class="mai-mail text-primary"></span> cancer_scan@SCANER.com</a>
+            </div>
+          </div>
+          <div class="col-sm-4 text-right text-sm">
+            <div class="social-mini-button">
+              <a href="#"><span class="mai-logo-facebook-f"></span></a>
+              <a href="#"><span class="mai-logo-twitter"></span></a>
+              <a href="#"><span class="mai-logo-dribbble"></span></a>
+              <a href="#"><span class="mai-logo-instagram"></span></a>
+            </div>
+          </div>
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </div> <!-- .topbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}"><span class="text-primary">CANCER</span>-SCAN<sapan> </a>
+          
+
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupport">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}">Contact</a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'blog-details' %}">Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'form1' %}">processing</a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="btn btn-primary ml-lg-3" href="{% url 'register' %}">Login / Register</a>
+            </li>
+          </ul>
+        </div> <!-- .navbar-collapse -->
+      </div> <!-- .container -->
+    </nav>
+  </header>
+
+
+  <div class="page-hero big-image overlay-dark"style="background-image:url('{% static "img/logo.jpg" %} ');">
+    
+    <div class="hero-section">
+      <div class="container text-center wow zoomout">
+        <span class="subhead">Let's make your life happier with</span>
+        <h1 class="display-4">SCANER</h1>
+        <a href="#" class="btn btn-primary">Let's Consult</a>
+      </div>
+    </div>
+  </div>
+  
+
+  
+    <div class="page-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 py-3 wow fadeInUp">
+            
+                
+           </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div> <!-- .bg-light -->
+    <h1 class="col-lg-6 wow fadeInRight">
+      All processes for DNA Analysis </h1>
+    <ol id='list'>
+      <a class="btn btn-primary" href="{% url 'form1' %}">Translation</a>
+      <a class="btn btn-primary" href="{% url 'form2' %}">Transcription</a>
+      <a class="btn btn-primary" href="{% url 'form3'%}">Compute GC</a>
+      <a class="btn btn-primary" href="{% url 'form4'%}">Parse Sequence for Motif</a>
+      <a class="btn btn-primary" href="{% url 'form5'%}">DNA Base Distribution</a>
+      <a class="btn btn-primary" href="{% url 'Radiology_Diagnostics'%}">ML</a>
+
+
+
+     <p></p>
+      </a>
+    </ol>
+  </div> <!-- .bg-light -->
+  <div class="page-section pb-0">
+   
+      <div class="container">
+
+      </div>
+    </div>
+    <div class="container text-center"><br><br>
+     <h1>Machine learning model for image brain cancer recognition</h1> 
+     <p></p>
+
+<div class="page-hero big-image overlay-dark"style="background-image:url('{% static "img/Brain2.jpg" %} ');">
+     
+  <div class="hero-section">
+    <div class="container text-center wow zoomout">
+      <span class="subhead">upload your medical image</span>
+      <h1 class="display-4">ML MODEL</h1>
+
+      <form  method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+             <div class="container text-center wow zoomout" style="position: relative;right: 100px;">
+              
+               <input style="padding: 20px 100px; margin-left: 100px;" class="input-file" id="my-file" type="file" name="myfile">
+               <label for="my-file" class="input-file-trigger" tabindex="0">
+                 Select a file...
+               </label>
+               <p class="file-return"></p>
+               <button id="checkk" style="padding: 20px 100px; margin-right: -200px;" type="submit"  class="btn btn-primary ml-lg-3">check</button>
+             </div>
+             
+                  
+          
+      </form>
+    </div>
+  </div>
+</div>
+
+{% block content %}
+
+  
+	<div class="container">
+	   <!-- file input -->
+	<div >
+      
+
+
+	</div>
+	</div>
+</div>
+
+{% endblock %}
+
+
+
+    </div>
+
+<p></p>
+
+
+    <div class="page-section banner-home bg-image"style="background-image: url({% static 'img/banner-pattern.svg'%});">
+
+    
+    <div class="container py-5 py-lg-0">
+        <div class="row align-items-center">
+        <div class="col-lg-4 wow zoomIn">
+            <div class="img-banner d-none d-lg-block">
+            <img src="{% static 'img/mobile_app.png' %}" alt="">
+            </div>
+        </div>
+        <div class="col-lg-8 wow fadeInRight">
+            <h1 class="font-weight-normal mb-3">Get easy access of all features using SCANER Application</h1>
+            <a href="#"><img src="{% static 'img/google_play.svg' %}" alt=""></a>
+        </div>
+        </div> <!-- .row -->
+    </div> <!-- .container -->
+    </div> <!-- .banner-home -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row px-md-3">
+          <div class="col-sm-6 col-lg-3 py-3">
+            <h5>Databases</h5>
+            <ul class="footer-menu">
+              <li><a href="https://www.ncbi.nlm.nih.gov/"target="_blank">NCBI</a></li>
+              <li><a href="http://www.ddbj.nig.ac.jp/"target="_blank">DDBJ </a></li>
+              <li><a href="http://www.ebi.ac.uk/ena"target="_blank"> EMBL-EBI </a></li>
+              <li><a href="http://www.uniprot.org/"target="_blank">UniProt</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3 py-3">
+            <h5>More Databases on Bioinformatics</h5>
+            <ul class="footer-menu">
+              <li><a href="http://www.ddbj.nig.ac.jp/"target="_blank">INSDC</a></li>
+              <li><a href="http://epigenomesportal.ca/ihec/about.html"target="_blank">IHEC</a></li>
+              <li><a href="http://software.broadinstitute.org/cancer/software/genepattern/"target="_blank">GenePattern</a></li>
+              <li><a href="http://genome.lbl.gov/vista/aboutus.shtml"target="_blank">VISTA </a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3 py-3">
+            <h5>Learn More</h5>
+            <ul class="footer-menu">
+              <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjSrrre9eT3AhUFzoUKHYYfBusQFnoECBAQAQ&url=https%3A%2F%2Fbookauthority.org%2Fbooks%2Fnew-bioinformatics-books&usg=AOvVaw2vHRFt7ELyb05euHy9PKS1"target="_blank">Books</a></li>
+              <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjRnOL-9eT3AhUIcxoKHZBNAkwQgQN6BAgCEAE&url=https%3A%2F%2Fscholar.google.com.eg%2Fscholar%3Fq%3Dbioinformatics%2Bresearch%26hl%3Den%26as_sdt%3D0%26as_vis%3D1%26oi%3Dscholart&usg=AOvVaw3jCg0ueY7J9-DH9stj4H9G"target="_blank">Researches</a></li>
+              <li><a href="{% url 'index' %}">Scane</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3 py-3">
+            <h5>Contact</h5>
+            <p class="footer-link mt-2">shibin El kom Menofia</p>
+            <a href="#" class="footer-link">01204874909</a>
+            <a href="#" class="footer-link">cancer@scan.net</a>
+  
+            <h5 class="mt-3">Social Media</h5>
+            <div class="footer-sosmed mt-3">
+              <a href="#" target="_blank"><span class="mai-logo-facebook-f"></span></a>
+              <a href="#" target="_blank"><span class="mai-logo-twitter"></span></a>
+              <a href="#" target="_blank"><span class="mai-logo-google-plus-g"></span></a>
+              <a href="#" target="_blank"><span class="mai-logo-instagram"></span></a>
+              <a href="#" target="_blank"><span class="mai-logo-linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+  
+        <hr>
+  
+      </div>
+    </footer>
+  
+  <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+  
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  
+  <script src="{% static 'vendor/owl-carousel/js/owl.carousel.min.js' %}"></script>
+  
+  <script src="{% static 'vendor/wow/wow.min.js' %}"></script>
+  
+  <script src="{% static 'js/theme.js' %}"></script>
+    
+  </body>
+
+  
+  </html>

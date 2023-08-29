@@ -1,0 +1,670 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <title>CANCER SCAN</title>
+
+  <link rel="stylesheet" href="{% static 'css/maicons.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+  <link rel="stylesheet" href="{% static 'vendor/owl-carousel/css/owl.carousel.css' %}">
+
+  <link rel="stylesheet" href="{% static 'vendor/animate/animate.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/theme.css' %}">
+
+
+</head>
+<body>
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header>
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 text-sm">
+            <div class="site-info">
+              <a href="#"><span class="mai-call text-primary"></span> 02 01271521805</a>
+              <span class="divider">|</span>
+              <a href="{% url 'index' %}"><span class="mai-mail text-primary"></span> cancer_scan@SCANER.com</a>
+            </div>
+          </div>
+          <div class="col-sm-4 text-right text-sm">
+            <div class="social-mini-button">
+              <a href="#"><span class="mai-logo-facebook-f"></span></a>
+              <a href="#"><span class="mai-logo-twitter"></span></a>
+              <a href="#"><span class="mai-logo-dribbble"></span></a>
+              <a href="#"><span class="mai-logo-instagram"></span></a>
+            </div>
+          </div>
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </div> <!-- .topbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}"><span class="text-primary">CANCER</span>-SCAN</a>
+
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupport">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}">Contact</a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'blog-details' %}">Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'form1' %}">processing</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary ml-lg-3" href="{% url 'register' %}">Login / Register</a>
+            </li>
+          </ul>
+        </div> <!-- .navbar-collapse -->
+      </div> <!-- .container -->
+    </nav>
+  </header>
+
+  <div class="page-section pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb bg-transparent py-0 mb-5">
+            </ol>
+          </nav>
+        </div>
+      </div> <!-- .row -->
+      <h3> Introduction to Next Generation Sequencing (NGS)</h3>
+
+      <div class="row">
+        <div class="col-lg-8">
+          <article class="blog-details">
+            <video width="700px" height="700px" 
+            controls="controls"> 
+              
+            <source src="{% static 'img\Introduction to Next Generation Sequencing.mp4' %}" 
+                type="video/mp4"> 
+        </video>
+            <div class="post-meta">
+              <div class="post-author">
+                <span class="text-grey">By</span> <a href="#">Admin</a>  
+              </div>
+              <span class="divider">|</span>
+              <div class="post-date">
+                <a href="#">22 Jan, 2022</a>
+              </div>
+              <span class="divider">|</span>
+              
+              <span class="divider">|</span>
+              <div class="post-comment-count">
+                <a href="https://youtu.be/ToKUGz_YhC4">video from stanford university</a>
+              </div>
+            </div>
+            <h2 class="post-title h1">TOW Models to View DNA structure and Protine 3D structure </h2>
+            <div class="post-content">
+              <p>DNA bases pair up with each other, A with T and C with G, to form units called base pairs. Each base is also attached to a sugar molecule and a phosphate molecule. Together, a base, sugar, and phosphate are called a nucleotide. Nucleotides are arranged in two long strands that form a spiral called a double helix.</p>
+
+              <p>Protein tertiary structure is the three dimensional shape of a protein. The tertiary structure will have a single polypeptide chain "backbone" with one or more protein secondary structures, the protein domains. Amino acid side chains may interact and bond in a number of ways.Programs such as AlphaFold will exponentially increase our general understanding of different biological processes. As mentioned earlier, having a protein 3D structure is key to reveal the function of unknown proteins which would allow, for example, a better and accelerated understanding of diseases</p>
+            </div>
+           
+          </article> <!-- .blog-details -->
+
+          <a class="btn btn-primary" href="https://medlineplus.gov/genetics/understanding/basics/dna/" target="_blank">DNA Structure</a>
+          <p></p>
+
+
+        <iframe  width="1200" height="480" src="https://sketchfab.com/playlists/embed?collection=8fa7b0e8d6f249c5862d114d2fcbac85&autostart=0"
+        title="liked"
+        frameborder="0"
+        allowfullscreen
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+        allow="autoplay; fullscreen; xr-spatial-tracking"
+        xr-spatial-tracking
+        execution-while-out-of-viewport
+        execution-while-not-rendered
+        web-share
+    ></iframe>
+    </p>
+    
+    <style>
+
+ 
+      #my-iframe
+      {
+          position : absolute;
+          left     : 340px;
+          top      : 650px ;
+          width    : 640px;
+          height   : 480px;
+      }
+      
+      </style>
+    <p></p>
+    <a class="btn btn-primary" href="https://www.nature.com/articles/s41401-020-0485-4#:~:text=The%20SARS%2DCoV%2D2%20S%20protein%20binds%20to%20the%20host,of%20SARS%2DCoV%2D2." target="_blank">COVID Spike Protein</a>
+<p> </p> 
+  <div id="my-frame"> 
+    <iframe width="1200" height="480" title="COVID Spike Protein" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/b5a39c784cc340e8929270be003018a2/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/covid-spike-protein-b5a39c784cc340e8929270be003018a2?utm_medium=embed&utm_campaign=share-popup&utm_content=b5a39c784cc340e8929270be003018a2" target="_blank" style="font-weight: bold; color: #1CAAD9;">  </a> <a href="https://sketchfab.com/wgurley?utm_medium=embed&utm_campaign=share-popup&utm_content=b5a39c784cc340e8929270be003018a2" target="_blank" style="font-weight: bold; color: #1CAAD9;">  </a>  <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=b5a39c784cc340e8929270be003018a2" target="_blank" style="font-weight: bold; color: #1CAAD9;"></a></p></div>
+
+
+          <div class="comment-form-wrap pt-5",align="center">
+            <form action="#" class="">
+              <div class="form-row form-group">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-6">
+                </div>
+              </div>
+              <p></p>
+              <p></p>
+
+  
+            </form>
+
+          </div>
+          
+        </div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="col-lg-4">
+            <div class="sidebar-block">
+              <h3 class="sidebar-title">Search for any Gen on NCBI and EMPL Databases</h3>
+
+              <form role="search" id="form">
+                <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+
+                <button type="submit" class="btn"><span class="icon mai-search"></span></button>
+                
+
+              </form>
+              
+              <script>
+                const f = document.getElementById('form');
+                const q = document.getElementById('query');
+                const google = 'https://www.ncbi.nlm.nih.gov/search/all/?term=';
+                const site = '';
+          
+                function submitted(event) {
+                  event.preventDefault();
+                  const url = google + site + '+' + q.value;
+                  const win = window.open(url, '_blank');
+                  win.focus();
+                }
+          
+                f.addEventListener('submit', submitted);
+              </script>
+            </div>
+        
+            
+            
+
+            <div class="sidebar-block">
+              <h3 class="sidebar-title">NGS Platforms</h3>
+              <div class="blog-item">
+                <a class="post-thumb" href="https://www.illumina.com/">
+                  <img src="{% static 'img/illumina.jpg'%}" alt="">
+                </a>
+                <div class="content">
+                  <h1 class="post-title"><a href="https://www.illumina.com/"target="_blank">Illumina</a></h1>
+                 
+                </div>
+                
+              </div>
+              <div class="blog-item">
+                <a class="post-thumb" href="">
+                  <img src="{% static 'img/tt.jpg' %}" alt="">
+                </a>
+                <div class="content">
+                  <h2 class="post-title"><a href="https://www.thermofisher.com/eg/en/home/brands/ion-torrent.html"target="_blank">Ion Torrent</a></h2>
+                  
+                </div>
+              </div>
+              <div class="blog-item">
+                <a class="post-thumb" href="">
+                  <img src="{% static 'img/cc.png'%}" alt="">
+                </a>
+                <div class="content">
+                  <h3 class="post-title"><a href="https://www.completegenomics.com/"target="_blank">Complete Genomics Technology.</a></h3>
+                  
+                </div>
+              </div>
+            </div>
+            
+
+            
+              <script>
+                const fe = document.getElementById('form');
+                const qe = document.getElementById('query');
+                const googlee = 'https://www.ebi.ac.uk/ena/browser/text-search?query=%20';
+                const sitee = '';
+          
+                function submittedee(eventee) {
+                  eventee.preventDefault();
+                  const urlee = googlee + sitee + '+' + qe.value;
+                  const winee = window.open(urlee, '_blank');
+                  winee.focus();
+                }
+          
+                fe.addEventListener('submit', submittedee);
+              </script>
+              
+              
+            </div>
+            
+
+
+
+
+           
+            
+          </div>
+        </div> 
+      </div> <!-- .row -->
+      <div class="sidebar-block">
+        <h3 class="btn btn-primary wow zoomIn"style="text-align: center" >Refrences</h3>
+        <h3 class="text-center wow fadeInUp">These are all the sources on which we based our idea of ​​DNA analysis and its structure, as well as the study of protein structure</h3>
+
+        <p>
+          </p>
+      </div>
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+  <div class="page-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-sm-6 py-3">
+              <div class="card-blog">
+                <div class="header">
+                  <div class="post-category">
+                    <a href="#">DNA</a>
+                  </div>
+                  <a href="blog-details" class="post-thumb">
+                    <img src="{% static 'img/dnamy.jpg' %}" alt="">
+                  </a>
+                </div>
+                <div class="body">
+                  <h5 class="post-title"><a href="blog-details.html">List of Countries without Coronavirus case</a></h5>
+                  <div class="site-info">
+                    <div class="avatar mr-2">
+                      <div class="avatar-img">
+                        <img src="{% static 'img/person_1.jpg' %}" alt="">
+                      </div>
+                      <span>Doctor:Joo</span>
+                    </div>
+                    <span class="mai-time"></span> 1 week ago
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 py-3">
+              <div class="card-blog">
+                <div class="header">
+                  <div class="post-category">
+                    <a href="#">Protine</a>
+                  </div>
+                  <a href="blog-details" class="post-thumb">
+                    <img src="{% static 'img/protein.jpg' %}" alt="">
+                  </a>
+                </div>
+                <div class="body">
+                  <h5 class="post-title"><a href="blog-details.html">What is the impact of eating too much sugar?</a></h5>
+                  <div class="site-info">
+                    <div class="avatar mr-2">
+                      <div class="avatar-img">
+                        <img src="{% static 'img/person_1.jpg' %}" alt="">
+                      </div>
+                      <span>Wizdom Jack</span>
+                    </div>
+                    <span class="mai-time"></span>  2/5/2022
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 py-3">
+              <div class="card-blog">
+                <div class="header">
+                  <div class="post-category">
+                    <a href="#">Genatics</a>
+                  </div>
+                  <a href="blog-details" class="post-thumb">
+                    <img src="{% static 'img/nat1.jpg' %}" alt="">
+                  </a>
+                </div>
+                <div class="body">
+                  <h5 class="post-title"><a href="blog-details.html">Shifting goalposts: Research in the time of the coronavirus</a></h5>
+                  <div class="site-info">
+                    <div class="avatar mr-2">
+                      <div class="avatar-img">
+                        <img src="{% static 'img/person_1.jpg' %}" alt="">
+                      </div>
+                      <span>Adams Collier</span>
+                    </div>
+                    <span class="mai-time"></span>  2/5/2022
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 py-3">
+              <div class="card-blog">
+                <div class="header">
+                  <div class="post-category">
+                    <a href="#">Genatics</a>
+                  </div>
+                  <a href="blog-details" class="post-thumb">
+                    <img src="{% static 'img/sc.jpg' %}" alt="">
+                  </a>
+                </div>
+                <div class="body">
+                  <h5 class="post-title"><a href="blog-details.html">What are the nonmedical factors most closely linked to death risk?</a></h5>
+                  <div class="site-info">
+                    <div class="avatar mr-2">
+                      <div class="avatar-img">
+                        <img src="{% static 'img/person_1.jpg' %}" alt="">
+                      </div>
+                      <span>Doctor:Joo</span>
+                    </div>
+                    <span class="mai-time"></span>  2/5/2022
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 py-3">
+              <div class="card-blog">
+                <div class="header">
+                  <div class="post-category">
+                    <a href="#">NGS</a>
+                  </div>
+                  <a href="blog-details" class="post-thumb">
+                    <img src="{% static 'img/blog/blog_2.jpg' %}" alt="">
+                  </a>
+                </div>
+                <div class="body">
+                  <h5 class="post-title"><a href="blog-details.html">Do gut bacteria contribute to ethnic health disparities</a></h5>
+                  <div class="site-info">
+                    <div class="avatar mr-2">
+                      <div class="avatar-img">
+                        <img src="{% static 'img/person_1.jpg' %}" alt="">
+                      </div>
+                      <span>Doctor:Joo</span>
+                    </div>
+                    <span class="mai-time"></span>  2/5/2022
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 py-3">
+              <div class="card-blog">
+                <div class="header">
+                  <div class="post-category">
+                    <a href="#">Data-Bases</a>
+                  </div>
+                  <a href="blog-details" class="post-thumb">
+                    <img src="{% static 'img/database.jpg' %}" alt="">
+                  </a>
+                </div>
+                <div class="body">
+                  <h5 class="post-title"><a href="blog-details.html">The Recovery Room: News beyond the pandemic</a></h5>
+                  <div class="site-info">
+                    <div class="avatar mr-2">
+                      <div class="avatar-img">
+                        <img src="{% static 'img/person_1.jpg' %}" alt="">
+                      </div>
+                      <span>Doctor:Joo</span>
+                    </div>
+                    <span class="mai-time"></span> 2/5/2022
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 py-3">
+              <div class="card-blog">
+                <div class="header">
+                  <div class="post-category">
+                    <a href="#">General Health</a>
+                  </div>
+                  <a href="blog-details" class="post-thumb">
+                    <img src="{% static 'img/blog/blog_2.jpg' %}" alt="">
+                  </a>
+                </div>
+                <div class="body">
+                  <h5 class="post-title"><a href="blog-details.html">Racism in mental healthcare: An invisible barrier</a></h5>
+                  <div class="site-info">
+                    <div class="avatar mr-2">
+                      <div class="avatar-img">
+                        <img src="{% static 'img/person_1.jpg' %}" alt="">
+                      </div>
+                      <span>Doctor:Joo</span>
+                    </div>
+                    <span class="mai-time"></span> 2 months ago
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 py-3">
+              <div class="card-blog">
+                <div class="header">
+                  <div class="post-category">
+                    <a href="#">Covid19</a>
+                  </div>
+                  <a href="blog-details" class="post-thumb">
+                    <img src="{% static 'img/blog/blog_2.jpg' %}" alt="">
+                  </a>
+                </div>
+                <div class="body">
+                  <h5 class="post-title"><a href="blog-details.html">COVID-19 live updates: Total number of cases passes 11.6 million</a></h5>
+                  <div class="site-info">
+                    <div class="avatar mr-2">
+                      <div class="avatar-img">
+                        <img src="{% static 'img/person_1.jpg' %}" alt="">
+                      </div>
+                      <span>Diego Simmons</span>
+                    </div>
+                    <span class="mai-time"></span>  2/5/2022
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 my-5">
+              <nav aria-label="Page Navigation">
+                <ul class="pagination justify-content-center">
+                  
+                </ul>
+              </nav>
+            </div>
+          </div> <!-- .row -->
+        </div>
+        <div class="col-lg-4">
+          <div class="sidebar">
+            <div class="sidebar-block">
+            
+            </div>
+            <div class="sidebar-block">
+              <h3 class="sidebar-title">Data Bases <Base></Base></h3>
+              <ul class="categories">
+                <li><a href="https://www.ncbi.nlm.nih.gov/"target="_blank">NCBI </a></li>
+                <li><a href="http://www.ddbj.nig.ac.jp/"target="_blank">DDJP </a></li>
+                <li><a href="http://www.ebi.ac.uk/ena"target="_blank">EMPL </a></li>
+                <li><a href="http://www.uniprot.org/"target="_blank">UniProt</a></li>
+                <li><a href="http://epigenomesportal.ca/ihec/about.html"target="_blank">IHEC </a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-block">
+              <h3 class="sidebar-title">Bioinformatics Researches</h3>
+              <div class="blog-item">
+                <a class="post-thumb" href="">
+                  <img src="{% static 'img/pop.jfif' %}" alt="">
+                </a>
+                <div class="content">
+                  <h5 class="post-title"><a href="#">Even the all-powerful Pointing has no control</a></h5>
+                  <div class="meta">
+                    <a href="#"><span class="mai-calendar"></span> 2/5/2022</a>
+                    <a href="#"><span class="mai-person"></span> Admin</a>
+                    <a href="#"><span class="mai-chatbubbles"></span> 19</a>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-item">
+                <a class="post-thumb" href="">
+                  <img src="{% static 'img/pop.jfif' %}" alt="">
+                </a>
+                <div class="content">
+                  <h5 class="post-title"><a href="#">Even the all-powerful Pointing has no control</a></h5>
+                  <div class="meta">
+                    <a href="#"><span class="mai-calendar"></span>2/5/2022</a>
+                    <a href="#"><span class="mai-person"></span> Admin</a>
+                    <a href="#"><span class="mai-chatbubbles"></span> 19</a>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-item">
+                <a class="post-thumb" href="">
+                  <img src="{% static 'img/pop.jfif' %}" alt="">
+                </a>
+                <div class="content">
+                  <h5 class="post-title"><a href="#">Even the all-powerful Pointing has no control</a></h5>
+                  <div class="meta">
+                    <a href="#"><span class="mai-calendar"></span> 2/5/2022</a>
+                    <a href="#"><span class="mai-person"></span> Admin</a>
+                    <a href="#"><span class="mai-chatbubbles"></span> 19</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           
+
+            <div class="sidebar-block">
+              <h3 class="sidebar-title">Paragraph</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+            </div>
+          </div>
+        </div> 
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+  <div class="page-section banner-home bg-image"style="background-image: url({% static 'img/banner-pattern.svg'%});">
+
+  
+    <div class="container py-5 py-lg-0">
+      <div class="row align-items-center">
+        <div class="col-lg-4 wow zoomIn">
+          <div class="img-banner d-none d-lg-block">
+            <img src="{% static 'img/mobile_app.png' %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-8 wow fadeInRight">
+          <h1 class="font-weight-normal mb-3">Get easy access of all features using One Health Application</h1>
+          <a href="#"><img src="{% static 'img/google_play.svg' %}" alt=""></a>
+        </div>
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+  </div> <!-- .banner-home -->
+  
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row px-md-3">
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Databases</h5>
+          <ul class="footer-menu">
+            <li><a href="https://www.ncbi.nlm.nih.gov/"target="_blank">NCBI</a></li>
+            <li><a href="http://www.ddbj.nig.ac.jp/"target="_blank">DDBJ </a></li>
+            <li><a href="http://www.ebi.ac.uk/ena"target="_blank"> EMBL-EBI </a></li>
+            <li><a href="http://www.uniprot.org/"target="_blank">UniProt</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>More Databases on Bioinformatics</h5>
+          <ul class="footer-menu">
+            <li><a href="http://www.ddbj.nig.ac.jp/"target="_blank">INSDC</a></li>
+            <li><a href="http://epigenomesportal.ca/ihec/about.html"target="_blank">IHEC</a></li>
+            <li><a href="http://software.broadinstitute.org/cancer/software/genepattern/"target="_blank">GenePattern</a></li>
+            <li><a href="http://genome.lbl.gov/vista/aboutus.shtml"target="_blank">VISTA </a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Learn More</h5>
+          <ul class="footer-menu">
+            <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjSrrre9eT3AhUFzoUKHYYfBusQFnoECBAQAQ&url=https%3A%2F%2Fbookauthority.org%2Fbooks%2Fnew-bioinformatics-books&usg=AOvVaw2vHRFt7ELyb05euHy9PKS1"target="_blank">Books</a></li>
+            <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjRnOL-9eT3AhUIcxoKHZBNAkwQgQN6BAgCEAE&url=https%3A%2F%2Fscholar.google.com.eg%2Fscholar%3Fq%3Dbioinformatics%2Bresearch%26hl%3Den%26as_sdt%3D0%26as_vis%3D1%26oi%3Dscholart&usg=AOvVaw3jCg0ueY7J9-DH9stj4H9G"target="_blank">Researches</a></li>
+            <li><a href="{% url 'index' %}">Scane</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Contact</h5>
+          <p class="footer-link mt-2">shibin El kom Menofia</p>
+          <a href="#" class="footer-link">01204874909</a>
+          <a href="#" class="footer-link">cancer@scan.net</a>
+
+          <h5 class="mt-3">Social Media</h5>
+          <div class="footer-sosmed mt-3">
+            <a href="#" target="_blank"><span class="mai-logo-facebook-f"></span></a>
+            <a href="#" target="_blank"><span class="mai-logo-twitter"></span></a>
+            <a href="#" target="_blank"><span class="mai-logo-google-plus-g"></span></a>
+            <a href="#" target="_blank"><span class="mai-logo-instagram"></span></a>
+            <a href="#" target="_blank"><span class="mai-logo-linkedin"></span></a>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+    </div>
+    
+  </footer>
+
+<script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+<script src="{% static 'vendor/owl-carousel/js/owl.carousel.min.js' %}"></script>
+
+<script src="{% static 'vendor/wow/wow.min.js' %}"></script>
+
+<script src="{% static 'js/theme.js' %}"></script>
+  
+</body>
+
+
+</html>

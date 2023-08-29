@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!--Jumbotron header for this page-->
+<div class="jumbotron text-center">
+  <div class="container">
+      <img class="my-icon" src="{% static 'hello/img/dna.png'%}">
+    <h1>DNA Base Distribution</h1>
+  </div>
+</div>
+<div class="container text-center"><br><br>
+
+  <!--UI form for this page-->
+  <form method="POST">
+    {% csrf_token %}
+    <div class="row">
+      <div class="col-md-3 text-right">
+        <p><label for="id_post">Input Sequence:<br></label></p>
+      </div>
+      <div class="col-md-9 text-left">
+        <!--Post input-->
+        <p><textarea rows=7 cols=80 name="post" required id="id_post"></textarea>{{post}}</p>
+      </div>
+    </div>
+
+    <!--Submit button-->
+    <div class="row">
+      <div class="col-md-9 text-right">
+        <button type="submit">Submit</button><br><br>
+      </div>
+    </div>
+
+  </form>
+
+  <!--Output-->
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-9 text-left">
+      <table>
+        <thead>
+          <tr>
+            <th>
+            <th>A
+            <th>T
+            <th>C
+            <th>G
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!--Iterates through result and outputs count information-->
+            <th class="text-right">Count
+            {% for count in result %}
+              <td>{{count}}</td>
+            {% endfor %}
+          </tr>
+          <tr>
+            <!--Distribution information-->
+            <th class="text-right">Distribution
+            {% for portion in distribution %}
+              <td>{{portion}}</td>
+            {% endfor %}
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
