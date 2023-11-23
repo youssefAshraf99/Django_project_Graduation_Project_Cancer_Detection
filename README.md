@@ -1,15 +1,24 @@
 # Django_project_Graduation_Project
 
-## Overview
+## Project Overview
 
-This is my graduation project in the field of Bioinformatics, focusing on the analysis of large DNA data and the development of a machine learning model for predicting breast cancer.
+Welcome to our graduation project in the field of Bioinformatics! The main goal of this project is to contribute to the preservation of health by leveraging advanced technologies for the detection of genetically passed or mutation-induced cancers.
 
-## Project Structure
+### Understanding BRCA1 Mutations
 
-- **/data**: This directory contains the raw DNA data used for analysis.
-- **/django_app**: The Django application for the project.
-- **/machine_learning_model**: Implementation and documentation of the machine learning model.
-- **/docs**: Project documentation.
+Mutations in the BRCA1 gene can significantly impact an individual's susceptibility to specific types of cancer. For instance, a mutation in the BRCA1 gene is linked to an increased risk of breast cancer, including the aggressive triple-negative breast cancer, which can pose challenges in treatment.
+
+## Machine Learning Model
+
+Our project incorporates a machine learning model designed to predict breast cancer based on DNA data analysis. Here's an overview of the model:
+
+### Pre-processing Module
+
+The images in our dataset vary in sizes. To ensure uniformity, we employ a pre-processing module that resizes all images in the dataset to a standardized size. This step is crucial for consistent input to the machine learning model.
+
+### Feature Extraction Module
+
+In the feature extraction phase, we utilize the VGG16 pre-trained model to extract 4096 deep features from the dataset. Addressing potential issues of model overfitting, we mitigate improper bias and variance by reducing the dimensionality of the data.
 
 ## Setup
 
@@ -28,7 +37,7 @@ This is my graduation project in the field of Bioinformatics, focusing on the an
 3. Set up the Django environment:
 
     ```bash
-    # You may need to create a virtual environment first
+    # Create and activate a virtual environment
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
@@ -45,17 +54,13 @@ This is my graduation project in the field of Bioinformatics, focusing on the an
     python manage.py runserver
     ```
 
-## Machine Learning Model
-
-The machine learning model is implemented in the `/machine_learning_model` directory. Refer to the documentation within that directory for more details on model training, evaluation, and usage.
-
 ## Contributing
 
 Feel free to contribute to this project by submitting issues or pull requests.
 
 ## Acknowledgments
 
-I would like to thank [mention any contributors or libraries used] for their contributions to this project.
+We extend our gratitude to all contributors and acknowledge the utilization of pre-trained models like VGG16 in our feature extraction module.
 
 ## License
 
