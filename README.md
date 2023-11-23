@@ -62,6 +62,4 @@ Feel free to contribute to this project by submitting issues or pull requests.
 
 We extend our gratitude to all contributors and acknowledge the utilization of pre-trained models like VGG16 in our feature extraction module.
 
-## License
 
-This project is licensed under the [Your License] - see the [LICENSE.md](LICENSE.md) file for details.
